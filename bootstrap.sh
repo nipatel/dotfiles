@@ -21,8 +21,6 @@ else
 		copyToHome
 	fi
 fi
-
-# not sure why this needs to be here
 unset copyToHome
 
 # because .profile wouldn't be executed again until next time you log in.
