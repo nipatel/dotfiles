@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # cd to the dirictory this script is in
-cd "$(dirname "${BASH_SOURCE}"")
+cd "$(dirname "${BASH_SOURCE}")"
 
 # get the latest and greatest from my baller git repo
 git pull
