@@ -1,7 +1,7 @@
-## Chris's dotfiles
+# Chris's dotfiles
 
 Dotfiles for all my Ubuntu boxes.
 
-# Thanks
+## Thanks
 
 [Mathias Bynens](http://mathiasbynens.be) for his popular [dotfiles](http://mths.be/dotfiles) project
