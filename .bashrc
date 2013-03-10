@@ -120,6 +120,7 @@ export GEICO_HOME=$HOME/geico
 export M2_HOME=$GEICO_HOME/tools/maven3
 export GEICO_M2_REPO=$GEICO_HOME/m2_repo
 export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=256m -Dlocal-build=true -Dmaven.repo.local=${GEICO_M2_REPO}"
+export EDITOR=vim
 export P4CONFIG=.p4config
 export P4IGNORE=.p4ignore
 export P4PORT=scm.dev.ibu.geico.net:1666
