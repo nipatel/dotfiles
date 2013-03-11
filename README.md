@@ -12,4 +12,4 @@ git clone https://github.com/Ludachrispeed/dotfiles.git
 
 ## Thanks
 
-[Mathias Bynens](http://mathiasbynens.be) for his popular [dotfiles](http://mths.be/dotfiles) project
+[Mathias Bynens](http://mathiasbynens.be) for his popular [dotfiles](http://mths.be/dotfiles) project. I've shamelessly taken his `bootstrap.sh` as well as several nuggets of bash.
