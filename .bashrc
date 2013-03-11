@@ -112,19 +112,16 @@ if ! shopt -oq posix; then
 fi
 
 # custom environment variables
-export P4HOME=$HOME/Applications/perforce
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/jre/bin/java::")
-export GEICO_HOME=$HOME/geico
-export M2_HOME=$GEICO_HOME/tools/maven3
-export GEICO_M2_REPO=$GEICO_HOME/m2_repo
-export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=256m -Dlocal-build=true -Dmaven.repo.local=${GEICO_M2_REPO}"
-export EDITOR=vim
-export P4CONFIG=.p4config
-export P4IGNORE=.p4ignore
-export P4PORT=scm.dev.ibu.geico.net:1666
+export EDITOR=emacs
 
 # update PATH to include new locations
-PATH=$PATH:$P4HOME/bin
 PATH=$PATH:$JAVA_HOME/bin
-PATH=$PATH:$M2_HOME/bin
-PATH=$PATH:$GEICO_HOME/tools/scripts/macosx/bin
+
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+	[ -r "$file" ] && source "$file"
+done
+unset file
