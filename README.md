@@ -2,7 +2,7 @@
 
 Dotfiles for all my Linux boxes.
 
-# How to Use
+## How to Use
 
 Clone this repository anywhere on your filesystem. Then run the `bootstrap.sh` script, which will copy all of the dotfiles to your home directory.
 
