@@ -8,16 +8,8 @@ case $- in
       *) return;;
 esac
 
-# don't put duplicate lines or lines starting with space in the history.
-# See bash(1) for more options
-HISTCONTROL=ignoreboth
-
 # append to the history file, don't overwrite it
 shopt -s histappend
-
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -80,13 +72,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# custom environment variables
-export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/jre/bin/java::")
-export EDITOR=emacs
-
-# update PATH to include new locations
-PATH=$PATH:$JAVA_HOME/bin
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
