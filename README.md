@@ -4,7 +4,7 @@ Dotfiles for all my Linux boxes.
 
 ## How to Use
 
-Clone this repository anywhere on your filesystem. Then run the `bootstrap.sh` script, which will copy all of the dotfiles to your home directory.
+Clone this repository anywhere on your filesystem. A folder called "dotfiles" will be automatically created after you clone the ropository. Then `cd` into the new "dotfiles" folder and execute the `bootstrap.sh` script, which will copy all of the dotfiles into your home directory (overwriting existing files).
 
 ```bash
 git clone https://github.com/Ludachrispeed/dotfiles.git
