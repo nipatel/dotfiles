@@ -1,0 +1,9 @@
+[user]
+	email = ludachrispeed@gmail.com
+	name = Chris Clark
+[core]
+	editor = emacs
+[help]
+	autocorrect = 1
+[color]
+	ui = auto

@@ -7,6 +7,12 @@
 ;; show line numbers in the left margin
 (global-linum-mode t)
 
+;; use shell-script-mode for my dotfiles
+(add-to-list 'auto-mode-alist '("\\.exports\\'" . shell-script-mode))
+(add-to-list 'auto-mode-alist '("\\.bash_aliases\\'" . shell-script-mode))
+(add-to-list 'auto-mode-alist '("\\.extras\\'" . shell-script-mode))
+(add-to-list 'auto-mode-alist '("\\.path\\'" . shell-script-mode))
+
 ;; ************ stuff set by Custom ****************
 
 (custom-set-variables
