@@ -12,6 +12,9 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# grc aliases: grc provides some extra color support using regular expressions and user-defined colors
+alias netstat='grc netstat'
+
 # alias to start emacs in the terminal
 alias emac='emacs -nw'
 
