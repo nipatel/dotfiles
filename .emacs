@@ -7,6 +7,10 @@
 ;; show line numbers in the left margin
 (global-linum-mode t)
 
+;; auto word wrapping
+(setq-default fill-column 120)
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
+
 ;; use shell-script-mode for my dotfiles
 (add-to-list 'auto-mode-alist '("\\.exports\\'" . shell-script-mode))
 (add-to-list 'auto-mode-alist '("\\.bash_aliases\\'" . shell-script-mode))
