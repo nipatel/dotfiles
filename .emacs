@@ -1,4 +1,4 @@
-;; skip welcome splash screnn
+;; skip welcome splash screen
 (setq inhibit-splash-screen t)
 
 ;; stop making stupid ~ backups
@@ -7,8 +7,11 @@
 ;; show line numbers in the left margin
 (global-linum-mode t)
 
+;; show row and column position in bottom bar
+(setq column-number-mode t)
+
 ;; auto word wrapping
-(setq-default fill-column 120)
+(setq-default fill-column 80)
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 ;; use shell-script-mode for my dotfiles
