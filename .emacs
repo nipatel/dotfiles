@@ -1,3 +1,8 @@
+;; This file is part of the dotfiles project. Changes should be checked in to
+;; the repository to be propagated to other computers.
+
+;; FILE: ~/.emacs: customizations for emacs
+
 ;; skip welcome splash screen
 (setq inhibit-splash-screen t)
 
