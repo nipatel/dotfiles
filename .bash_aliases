@@ -1,3 +1,6 @@
+# This file is part of the dotfiles project. Changes should be checked in to the
+# repository to be propagated to other computers.
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"

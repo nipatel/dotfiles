@@ -1,5 +1,13 @@
-# don't put duplicate lines or lines starting with space in the history. See
-# bash(1) for more options
+# This file is part of the dotfiles project. Changes should be checked in to the
+# repository to be propagated to other computers.
+
+# FILE: ~/.exports: sets environment variables
+
+########################################################################
+#  exports: the following variables are restricted to the shell        #
+########################################################################
+
+# don't put duplicate lines or lines starting with space in the history
 HISTCONTROL=ignoreboth
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)

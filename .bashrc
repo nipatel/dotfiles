@@ -1,6 +1,7 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
+# This file is part of the dotfiles project. Changes should be checked in to the
+# repository to be propagated to other computers.
+
+# FILE: ~/.bashrc: executed by bash(1) for non-login shells.
 
 # If not running interactively, don't do anything
 case $- in
