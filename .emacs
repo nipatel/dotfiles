@@ -20,6 +20,9 @@
 (add-to-list 'auto-mode-alist '("\\.extras\\'" . shell-script-mode))
 (add-to-list 'auto-mode-alist '("\\.path\\'" . shell-script-mode))
 
+;; support using 'a' in Dired to replace Dired buffer with selected file
+(put 'dired-find-alternate-file 'disabled nil)
+
 ;; ************ stuff set by Custom ****************
 
 (custom-set-variables
