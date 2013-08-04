@@ -19,6 +19,16 @@
 (setq-default fill-column 80)
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
+;; C-cz to see the full path of the file in the current buffer and copies that
+;; path to the kill ring
+(defun show-file-name ()
+  "Show the full path file name in the minibuffer."
+  (interactive)
+  (message (buffer-file-name))
+  (kill-new (file-truename buffer-file-name))
+)
+(global-set-key "\C-cz" 'show-file-name)
+
 ;; use shell-script-mode for my dotfiles
 (add-to-list 'auto-mode-alist '("\\.exports\\'" . shell-script-mode))
 (add-to-list 'auto-mode-alist '("\\.bash_aliases\\'" . shell-script-mode))
